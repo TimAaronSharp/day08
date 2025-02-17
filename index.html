@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Scoreboard</title>
+</head>
+
+<body>
+
+  <header>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <button class="text-center fs-1">RESET</button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <div class="scoreboard">
+            <div class="row">
+              <div class="col-md-6 m-auto text-center">
+                <div class="home-team py-4 fs-1 text-center">
+                  HOME
+                </div>
+                <div id="home-score" class="home-score-section text-center fs-1">
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="col-md-6 m-auto text-center">
+                <div class="away-team py-4 fs-1 text-center">
+                  AWAY
+                </div>
+                <div id="away-score" class="away-score-section text-center fs-1">
+                  <p>0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <div id="home-plus-1" class="py-2">
+                <button class="btn btn-success score-btn fs-1">
+                  HOME + 1
+                </button>
+              </div>
+              <div id="home-plus-3" class="py-2">
+                <button class="btn btn-success score-btn fs-1">
+                  HOME + 3
+                </button>
+              </div>
+              <div id="home-minus-1" class="py-2">
+                <button class="btn btn-success score-btn fs-1">
+                  HOME -1
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6 text-center">
+              <div id="away-plus-1" class="py-2">
+                <button class="btn btn-success score-btn fs-1">
+                  AWAY + 1
+                </button>
+              </div>
+              <div id="away-plus-3" class="py-2">
+                <button class="btn btn-success score-btn fs-1">
+                  AWAY + 3
+                </button>
+              </div>
+              <div id="away-minus-1" class="py-2">
+                <button class="btn btn-success score-btn fs-1">
+                  AWAY - 1
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
