@@ -17,34 +17,34 @@
 
   <header>
     <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 d-flex justify-content-center">
-          <button class="text-center fs-1">RESET</button>
-        </div>
-      </div>
     </section>
   </header>
 
   <main>
     <section class="container-fluid">
       <div class="row">
+        <div class="col-md-12 d-flex justify-content-center pt-3">
+          <button class="text-center border-settings reset-btn fs-1">RESET</button>
+        </div>
+      </div>
+      <div class="row mt-3">
         <div class="col-md-6 m-auto">
-          <div class="scoreboard">
+          <div class="scoreboard border-settings">
             <div class="row">
               <div class="col-md-6 m-auto text-center">
                 <div class="home-team py-4 fs-1 text-center">
                   HOME
                 </div>
-                <div id="home-score" class="home-score-section text-center fs-1">
-                  <p>0</p>
+                <div class="home-score-section text-center fs-1">
+                  <p id="home-score">0</p>
                 </div>
               </div>
               <div class="col-md-6 m-auto text-center">
                 <div class="away-team py-4 fs-1 text-center">
                   AWAY
                 </div>
-                <div id="away-score" class="away-score-section text-center fs-1">
-                  <p>0</p>
+                <div class="away-score-section text-center fs-1">
+                  <p id="away-score">0</p>
                 </div>
               </div>
             </div>
@@ -57,34 +57,34 @@
           <div class="row">
             <div class="col-md-6 text-center">
               <div id="home-plus-1" class="py-2">
-                <button class="btn btn-success score-btn fs-1">
+                <button onclick="scoreChange(1, 'home')" class="score-btn border-settings fs-1">
                   HOME + 1
                 </button>
               </div>
               <div id="home-plus-3" class="py-2">
-                <button class="btn btn-success score-btn fs-1">
+                <button onclick="scoreChange(3, 'home')" class="score-btn border-settings fs-1">
                   HOME + 3
                 </button>
               </div>
               <div id="home-minus-1" class="py-2">
-                <button class="btn btn-success score-btn fs-1">
+                <button onclick="scoreChange(-1, 'home')" class="score-btn border-settings fs-1">
                   HOME -1
                 </button>
               </div>
             </div>
             <div class="col-md-6 text-center">
               <div id="away-plus-1" class="py-2">
-                <button class="btn btn-success score-btn fs-1">
+                <button onclick="scoreChange(1, 'away')" class="score-btn border-settings fs-1">
                   AWAY + 1
                 </button>
               </div>
               <div id="away-plus-3" class="py-2">
-                <button class="btn btn-success score-btn fs-1">
+                <button onclick="scoreChange(3, 'away')" class="score-btn border-settings fs-1">
                   AWAY + 3
                 </button>
               </div>
               <div id="away-minus-1" class="py-2">
-                <button class="btn btn-success score-btn fs-1">
+                <button onclick="scoreChange(-1, 'away')" class="score-btn border-settings fs-1">
                   AWAY - 1
                 </button>
               </div>

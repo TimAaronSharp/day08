@@ -19,12 +19,21 @@ body {
 /* SECTION CLASSES */
 .scoreboard {
   background-color: var(--custom-blue);
-  margin-top: 100px;
-  min-height: 250px;
+  min-height: 150px;
 }
 
 .score-btn {
-  background-color: var(--custom-blue);
+  background-color: blue;
+}
+
+.reset-btn {
+  background-color: red;
+}
+
+.border-settings {
+  border: none;
+  border-radius: 20px;
+  color: white;
 }
 
 /* !SECTION !CLASSES*/
